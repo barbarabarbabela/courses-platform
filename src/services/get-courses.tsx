@@ -1,13 +1,7 @@
+// src/services/courseService.ts
 import { Course } from "../interfaces/course";
+import coursesData from "../data/courses.json";
 
 export async function getCourses(): Promise<Course[]> {
-  const response = await fetch("../data/courses.json");
-
-  if (!response.ok) {
-    throw new Error("Courses not found");
-  }
-
-  const data: Course[] = await response.json();
-
-  return data;
+  return new Promise((resolve) => setTimeout(() => resolve(coursesData), 500));
 }
