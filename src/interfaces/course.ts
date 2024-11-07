@@ -7,6 +7,7 @@ export interface Course {
   instructor: string;
   category: string;
   duration: string;
+  image: string;
   curriculum: string[];
   reviews: Review[];
 }
