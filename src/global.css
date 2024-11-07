@@ -17,4 +17,5 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #c4c4cc;
   background: #121214;
+  overflow-y: scroll;
 }
