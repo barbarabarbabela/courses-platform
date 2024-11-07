@@ -1,4 +1,3 @@
-// src/services/courseService.ts
 import { Course } from "../interfaces/course";
 import coursesData from "../data/courses.json";
 
