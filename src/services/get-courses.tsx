@@ -1,4 +1,4 @@
-import { Course } from "../interfaces/course.";
+import { Course } from "../interfaces/course";
 
 export async function getCourses(): Promise<Course[]> {
   const response = await fetch("../data/courses.json");
