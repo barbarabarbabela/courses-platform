@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Introdução ao JavaScript",
+    "description": "Aprenda os fundamentos do JavaScript, a linguagem de programação mais popular da web.",
+    "instructor": "Maria Silva",
+    "category": "Programação",
+    "duration": "10 horas",
+    "curriculum": [
+      "Introdução ao JavaScript",
+      "Variáveis e tipos de dados",
+      "Estruturas de controle",
+      "Funções e objetos",
+      "Manipulação do DOM"
+    ],
+    "reviews": [
+      {
+        "user": "João Souza",
+        "rating": 4,
+        "comment": "Ótimo curso para iniciantes!"
+      },
+      {
+        "user": "Ana Costa",
+        "rating": 5,
+        "comment": "Explicações claras e exemplos práticos."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "React para Iniciantes",
+    "description": "Entenda os conceitos básicos de React e como criar componentes interativos.",
+    "instructor": "Pedro Santos",
+    "category": "Desenvolvimento Web",
+    "duration": "15 horas",
+    "curriculum": [
+      "Conceitos básicos de React",
+      "Componentes e props",
+      "Estado e hooks",
+      "Rotas com React Router",
+      "Gerenciamento de estado"
+    ],
+    "reviews": [
+      {
+        "user": "Carla Mendes",
+        "rating": 5,
+        "comment": "Curso excelente, aprendi muito sobre React!"
+      },
+      {
+        "user": "Lucas Ribeiro",
+        "rating": 4,
+        "comment": "Boa introdução, mas poderia ter mais exemplos práticos."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "TypeScript Avançado",
+    "description": "Aprofunde-se no TypeScript para escrever código mais seguro e escalável.",
+    "instructor": "Sofia Lima",
+    "category": "Programação",
+    "duration": "20 horas",
+    "curriculum": [
+      "Tipos básicos e avançados",
+      "Interfaces e tipos genéricos",
+      "Tipos condicionais",
+      "Configuração de projeto TypeScript",
+      "Boas práticas e padrões"
+    ],
+    "reviews": [
+      {
+        "user": "Ricardo Almeida",
+        "rating": 5,
+        "comment": "Conteúdo muito completo e bem explicado!"
+      },
+      {
+        "user": "Fernanda Oliveira",
+        "rating": 4,
+        "comment": "Alguns tópicos são desafiadores, mas o instrutor explica bem."
+      }
+    ]
+  }
+]
