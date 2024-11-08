@@ -8,11 +8,6 @@
   box-sizing: border-box;
 }
 
-:focus {
-  outline: transparent;
-  box-shadow: 0 0 0 2px #00875f;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
   color: #c4c4cc;
