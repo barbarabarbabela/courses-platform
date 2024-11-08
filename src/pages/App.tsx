@@ -1,7 +1,7 @@
-import { CoursesPage } from "./CoursesPage";
+import { CoursesPage } from './CoursesPage'
 
 function App() {
-  return <CoursesPage />;
+  return <CoursesPage />
 }
 
-export default App;
+export default App
