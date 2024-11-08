@@ -1,25 +1,46 @@
-import { useCoursesQuery } from "../hooks/use-courses-query";
-import { CourseCard } from "./ui/CourseCard";
+import { useCoursesQuery } from '../hooks/use-courses-query'
+import { useSearchContext } from '../hooks/use-search-context'
+import Button from './Button'
+import { CourseCard } from './CourseCard'
 
 export const CourseList = () => {
-  const { data } = useCoursesQuery();
+  const { data, isLoading, isError } = useCoursesQuery()
+  const { searchTerm, handleClearSearch } = useSearchContext()
+
+  const searchItemsLength = data?.filter(course =>
+    course.title.toLowerCase().includes(searchTerm.toLowerCase())
+  ).length
+
+  if (isLoading) return <div>Carregando...</div>
+
+  if (isError) return <div>Erro ao carregar os cursos</div>
 
   return (
     <div className="p-10">
-      <h2 className="text-3xl font-bold mb-10">Todos os Cursos</h2>
+      <div className="flex justify-between mb-10">
+        <h2 className="text-3xl font-bold">
+          {searchTerm.length > 0
+            ? `Resultados (${searchItemsLength})`
+            : `Todos os Cursos (${data?.length})`}
+        </h2>
+        {searchTerm && (
+          <div className="w-32">
+            <Button onClick={handleClearSearch} variant="filled">
+              Voltar
+            </Button>
+          </div>
+        )}
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {data?.map((course) => {
-          return (
-            <CourseCard
-              title={course.title}
-              instructor={course.instructor}
-              description={course.description}
-              img={course.image}
-              key={course.id}
-            />
-          );
-        })}
+        {searchTerm.length > 0
+          ? data
+              ?.filter(course =>
+                course.title.toLowerCase().includes(searchTerm.toLowerCase())
+              )
+              .map(course => <CourseCard key={course.id} data={course} />)
+          : data?.map(course => <CourseCard key={course.id} data={course} />)}
       </div>
     </div>
-  );
-};
+  )
+}
