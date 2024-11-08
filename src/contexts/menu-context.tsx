@@ -7,13 +7,13 @@ type MenuItem = {
   path: string;
 };
 
-type MenuContextType = {
+type MenuContextProps = {
   selected: MenuItem["label"];
   items: MenuItem[];
   handleSelect: (item: MenuItem["label"]) => void;
 };
 
-const MenuContext = createContext<MenuContextType | undefined>(undefined);
+const MenuContext = createContext<MenuContextProps | undefined>(undefined);
 
 const MenuProvider = ({ children }: { children: ReactNode }) => {
   const [selected, setSelected] =
