@@ -4,7 +4,10 @@ export interface Course {
   id: number;
   title: string;
   description: string;
-  instructor: string;
+  instructor: {
+    name: string;
+    image: string;
+  };
   category: string;
   duration: string;
   image: string;
