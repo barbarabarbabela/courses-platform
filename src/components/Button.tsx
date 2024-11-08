@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes } from "react";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: "outline" | "filled";
@@ -15,11 +15,10 @@ const Button: React.FC<ButtonProps> = ({
   const variantStyles = {
     filled:
       "bg-green500 text-white border-green500 hover:bg-green300 active:bg-green500/80",
-    outline:
-      "bg-transparent text-green500  hover:bg-green500 hover:text-white ",
+    outline: "bg-transparent text-green500 hover:bg-green500 hover:text-white ",
   };
   const disabledStyles =
-    "bg-gray400 hover:bg-gray400 active:bg-gray400 text-green500  cursor-not-allowed";
+    "bg-gray-400 hover:bg-gray-400 active:bg-gray-400 cursor-not-allowed";
 
   return (
     <button
