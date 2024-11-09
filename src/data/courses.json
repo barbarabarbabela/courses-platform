@@ -5,11 +5,11 @@
     "description": "Aprenda os fundamentos do JavaScript, a linguagem de programação mais popular da web.",
     "instructor": {
       "name": "Maria Silva",
-      "image": "https://www.istockphoto.com/br/foto/sorridente-simp%C3%A1tica-confiante-millennial-senhora-gerente-caucasiana-professora-em-gm1915382108-555011507?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fpt-br%2Fs%2Ffotografias%2Fwoman&utm_medium=affiliate&utm_source=unsplash&utm_term=woman%3A%3Aaffiliate-collections%3Acontrol"
+      "image": "https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "category": "Programação",
     "duration": "10 horas",
-    "image": "https://media.istockphoto.com/id/1356364268/pt/foto/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-keyboard-screens-show-coding.jpg?s=1024x1024&w=is&k=20&c=d0SitWpRzQSP-s25r6S4uZt75mn1-x7svDTbJGglArc=",
+    "image": "https://images.unsplash.com/photo-1667372393086-9d4001d51cf1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "curriculum": [
       "Introdução ao JavaScript",
       "Variáveis e tipos de dados",
@@ -22,13 +22,13 @@
         "user": "João Souza",
         "rating": 4,
         "comment": "Ótimo curso para iniciantes!",
-        "image": "https://unsplash.com/photos/tB5ZZtHZ_tI"
+        "image": "https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "user": "Ana Costa",
         "rating": 5,
         "comment": "Explicações claras e exemplos práticos.",
-        "image": "https://www.istockphoto.com/br/foto/sorridente-simp%C3%A1tica-confiante-millennial-senhora-gerente-caucasiana-professora-em-gm1915382108-555011507?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fpt-br%2Fs%2Ffotografias%2Fwoman&utm_medium=affiliate&utm_source=unsplash&utm_term=woman%3A%3Aaffiliate-collections%3Acontrol"
+        "image": "https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ]
   },
@@ -38,11 +38,11 @@
     "description": "Entenda os conceitos básicos de React e como criar componentes interativos.",
     "instructor": {
       "name": "Pedro Santos",
-      "image": "https://unsplash.com/photos/tB5ZZtHZ_tI"
+      "image": "https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "category": "Desenvolvimento Web",
     "duration": "15 horas",
-    "image": "https://media.istockphoto.com/id/1356364268/pt/foto/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-keyboard-screens-show-coding.jpg?s=1024x1024&w=is&k=20&c=d0SitWpRzQSP-s25r6S4uZt75mn1-x7svDTbJGglArc=",
+    "image": "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "curriculum": [
       "Conceitos básicos de React",
       "Componentes e props",
@@ -55,25 +55,25 @@
         "user": "Carla Mendes",
         "rating": 5,
         "comment": "Curso excelente, aprendi muito sobre React!",
-        "image": "https://www.istockphoto.com/br/foto/sorridente-simp%C3%A1tica-confiante-millennial-senhora-gerente-caucasiana-professora-em-gm1915382108-555011507?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fpt-br%2Fs%2Ffotografias%2Fwoman&utm_medium=affiliate&utm_source=unsplash&utm_term=woman%3A%3Aaffiliate-collections%3Acontrol"
+        "image": "https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "user": "Lucas Ribeiro",
         "rating": 4,
         "comment": "Boa introdução, mas poderia ter mais exemplos práticos.",
-        "image": "https://unsplash.com/pt-br/fotografias/um-homem-de-oculos-e-camisa-xadrez-tB5ZZtHZ_tI"
+        "image": "https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "user": "Lucas Ribeiro",
         "rating": 4,
         "comment": "Boa introdução, mas poderia ter mais exemplos práticosBoa introdução, mas poderia ter mais exemplos práticosBoa introdução, mas poderia ter mais exemplos práticos.",
-        "image": "https://unsplash.com/pt-br/fotografias/um-homem-de-oculos-e-camisa-xadrez-tB5ZZtHZ_tI"
+        "image": "https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "user": "Lucas Ribeiro",
         "rating": 4,
         "comment": "Boa introdução, mas poderia ter mais exemplos práticos.",
-        "image": "https://unsplash.com/pt-br/fotografias/um-homem-de-oculos-e-camisa-xadrez-tB5ZZtHZ_tI"
+        "image": "https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ]
   },
@@ -83,11 +83,11 @@
     "description": "Aprenda Node.js desde os fundamentos até a construção de APIs completas.",
     "instructor": {
       "name": "Roberto Almeida",
-      "image": "https://www.istockphoto.com/photo/smiling-man-programming-at-computer-in-office-gm1156977761-317207258"
+      "image": "https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "category": "Backend",
     "duration": "20 horas",
-    "image": "https://media.istockphoto.com/id/1356364268/pt/foto/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-keyboard-screens-show-coding.jpg?s=1024x1024&w=is&k=20&c=d0SitWpRzQSP-s25r6S4uZt75mn1-x7svDTbJGglArc=",
+    "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "curriculum": [
       "Introdução ao Node.js",
       "Módulos e gerenciamento de pacotes",
@@ -100,7 +100,7 @@
         "user": "Carlos Oliveira",
         "rating": 5,
         "comment": "Curso completo e bem estruturado.",
-        "image": "https://www.istockphoto.com/photo/young-man-in-casual-clothes-gm1216954967-354221719"
+        "image": "https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ]
   },
@@ -110,7 +110,7 @@
     "description": "Aprenda a criar interfaces dinâmicas e responsivas com Vue.js.",
     "instructor": {
       "name": "Fernanda Rocha",
-      "image": "https://www.istockphoto.com/photo/smiling-woman-at-computer-gm1183724462-334005256"
+      "image": "https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "category": "Frontend",
     "duration": "12 horas",
@@ -127,17 +127,17 @@
         "user": "Laura Dias",
         "rating": 4,
         "comment": "Ótimo curso, excelente para iniciantes!",
-        "image": "https://www.istockphoto.com/photo/woman-using-laptop-in-office-gm1269416922-374143643"
+        "image": "https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ]
   },
   {
     "id": 5,
     "title": "SQL para Análise de Dados",
-    "description": "Descubra como usar SQL para gerenciar e analisar grandes volumes de dados.",
+    "description": "Descubra como usar SQL para gerenciar e analisar grandes volumes de dados.Descubra como usar SQL para gerenciar e analisar grandes volumes de dados.Descubra como usar SQL para gerenciar e analisar grandes volumes de dados.",
     "instructor": {
       "name": "Ricardo Santos",
-      "image": "https://www.istockphoto.com/photo/man-smiling-in-office-gm1288990153-384090319"
+      "image": "https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "category": "Banco de Dados",
     "duration": "8 horas",
@@ -154,7 +154,7 @@
         "user": "Paula Menezes",
         "rating": 5,
         "comment": "Excelente curso para quem quer aprender SQL!",
-        "image": "https://www.istockphoto.com/photo/smiling-woman-working-on-laptop-gm1161535973-331228256"
+        "image": "https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ]
   }
