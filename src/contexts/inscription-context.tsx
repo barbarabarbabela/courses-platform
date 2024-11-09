@@ -1,5 +1,5 @@
-import { createContext, useContext, useState, ReactNode } from "react";
-import { Course } from "../interfaces/course";
+import { createContext, useState, ReactNode } from "react";
+import { Course } from "../interfaces";
 
 type InscriptionContextProps = {
   inscriptions: Course[];
@@ -7,9 +7,9 @@ type InscriptionContextProps = {
   isCourseInscribed: (courseId: number) => boolean;
 };
 
-const InscriptionContext = createContext<InscriptionContextProps | undefined>(
-  undefined
-);
+export const InscriptionContext = createContext<
+  InscriptionContextProps | undefined
+>(undefined);
 
 export const InscriptionProvider = ({ children }: { children: ReactNode }) => {
   const [inscriptions, setInscriptions] = useState<Course[]>([]);
@@ -29,12 +29,4 @@ export const InscriptionProvider = ({ children }: { children: ReactNode }) => {
       {children}
     </InscriptionContext.Provider>
   );
-};
-
-export const useInscription = () => {
-  const context = useContext(InscriptionContext);
-  if (!context) {
-    throw new Error("useInscription must be used within a InscriptionProvider");
-  }
-  return context;
 };

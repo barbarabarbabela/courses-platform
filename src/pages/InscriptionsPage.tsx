@@ -1,5 +1,4 @@
-import { Header } from "../components/Header";
-import { InscriptionsList } from "../components/InscriptionsList";
+import { Header, InscriptionsList } from "../components";
 
 export const InscriptionsPage = () => {
   return (

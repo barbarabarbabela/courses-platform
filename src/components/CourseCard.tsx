@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { Course } from "../interfaces/course";
-import { useInscription } from "../contexts/inscription-context";
-import Button from "./Button";
+import { Course } from "../interfaces";
+import { Button } from "./Button";
+import { useInscription } from "../hooks";
 
 interface CourseCardProps {
   data: Course;

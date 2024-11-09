@@ -1,10 +1,9 @@
 import { FaSearch } from "react-icons/fa";
 import logo from "../assets/logo.png";
-import Input from "./Input";
-import { useMenu } from "../hooks/use-menu";
+import { Input } from "./Input";
+import { useMenu, useSearchContext } from "../hooks";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useSearchContext } from "../hooks/use-search-context";
 
 interface FormProps {
   inputData: string;

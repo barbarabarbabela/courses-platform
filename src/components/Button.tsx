@@ -4,7 +4,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: "outline" | "filled";
 };
 
-const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   children,
   type = "submit",
   variant = "filled",
@@ -17,8 +17,7 @@ const Button: React.FC<ButtonProps> = ({
       "bg-green500 text-white border-green500 hover:bg-green300 active:bg-green500/80",
     outline: "bg-transparent text-green500 hover:bg-green500 hover:text-white ",
   };
-  const disabledStyles =
-    "bg-gray-400 hover:bg-gray-400 active:bg-gray-400 cursor-not-allowed";
+  const disabledStyles = "cursor-not-allowed";
 
   return (
     <button
@@ -32,5 +31,3 @@ const Button: React.FC<ButtonProps> = ({
     </button>
   );
 };
-
-export default Button;

@@ -1,15 +1,14 @@
-import { useInscription } from '../contexts/inscription-context'
-import { useSearchContext } from '../hooks/use-search-context'
-import Button from './Button'
-import { CourseCard } from './CourseCard'
+import { useInscription, useSearchContext } from "../hooks";
+import { Button } from "./Button";
+import { CourseCard } from "./CourseCard";
 
 export const InscriptionsList = () => {
-  const { inscriptions } = useInscription()
-  const { searchTerm, handleClearSearch } = useSearchContext()
+  const { inscriptions } = useInscription();
+  const { searchTerm, handleClearSearch } = useSearchContext();
 
-  const searchItemsLength = inscriptions?.filter(course =>
+  const searchItemsLength = inscriptions?.filter((course) =>
     course.title.toLowerCase().includes(searchTerm.toLowerCase())
-  ).length
+  ).length;
 
   return (
     <div className="p-10">
@@ -31,14 +30,14 @@ export const InscriptionsList = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {searchTerm.length > 0
           ? inscriptions
-              ?.filter(course =>
+              ?.filter((course) =>
                 course.title.toLowerCase().includes(searchTerm.toLowerCase())
               )
-              .map(course => <CourseCard key={course.id} data={course} />)
-          : inscriptions?.map(course => (
+              .map((course) => <CourseCard key={course.id} data={course} />)
+          : inscriptions?.map((course) => (
               <CourseCard key={course.id} data={course} />
             ))}
       </div>
     </div>
-  )
-}
+  );
+};

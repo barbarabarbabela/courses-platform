@@ -1,19 +1,18 @@
-import { useCoursesQuery } from '../hooks/use-courses-query'
-import { useSearchContext } from '../hooks/use-search-context'
-import Button from './Button'
-import { CourseCard } from './CourseCard'
+import { useCoursesQuery, useSearchContext } from "../hooks";
+import { Button } from "./Button";
+import { CourseCard } from "./CourseCard";
 
 export const CourseList = () => {
-  const { data, isLoading, isError } = useCoursesQuery()
-  const { searchTerm, handleClearSearch } = useSearchContext()
+  const { data, isLoading, isError } = useCoursesQuery();
+  const { searchTerm, handleClearSearch } = useSearchContext();
 
-  const searchItemsLength = data?.filter(course =>
+  const searchItemsLength = data?.filter((course) =>
     course.title.toLowerCase().includes(searchTerm.toLowerCase())
-  ).length
+  ).length;
 
-  if (isLoading) return <div>Carregando...</div>
+  if (isLoading) return <div>Carregando...</div>;
 
-  if (isError) return <div>Erro ao carregar os cursos</div>
+  if (isError) return <div>Erro ao carregar os cursos</div>;
 
   return (
     <div className="p-10">
@@ -35,12 +34,12 @@ export const CourseList = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {searchTerm.length > 0
           ? data
-              ?.filter(course =>
+              ?.filter((course) =>
                 course.title.toLowerCase().includes(searchTerm.toLowerCase())
               )
-              .map(course => <CourseCard key={course.id} data={course} />)
-          : data?.map(course => <CourseCard key={course.id} data={course} />)}
+              .map((course) => <CourseCard key={course.id} data={course} />)
+          : data?.map((course) => <CourseCard key={course.id} data={course} />)}
       </div>
     </div>
-  )
-}
+  );
+};

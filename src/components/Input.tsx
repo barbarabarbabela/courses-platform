@@ -4,7 +4,7 @@ type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   icon?: ReactNode;
 };
 
-const Input = forwardRef<HTMLInputElement, InputProps>(
+export const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ name, type = "text", icon, ...props }, ref) => {
     return (
       <div className="relative text-gray600 w-[350px]">
@@ -13,7 +13,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           type={type}
           name={name}
           ref={ref}
-          className="px-4 py-2 w-full rounded-xl pr-10" // Ajuste de padding para o espaço do ícone
+          className="px-4 py-2 w-full rounded-xl pr-10"
         />
         {icon && (
           <span className="absolute inset-y-0 right-3 flex items-center text-gray400">
@@ -24,7 +24,3 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     );
   }
 );
-
-Input.displayName = "Input";
-
-export default Input;

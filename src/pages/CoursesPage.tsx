@@ -1,5 +1,4 @@
-import { CourseList } from "../components/CourseList";
-import { Header } from "../components/Header";
+import { CourseList, Header } from "../components";
 
 export const CoursesPage = () => {
   return (

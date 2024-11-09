@@ -1,12 +1,11 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useCoursesQuery } from "../hooks/use-courses-query";
-import { useInscription } from "../contexts/inscription-context";
-import Button from "./Button";
+import { useCoursesQuery, useInscription } from "../hooks";
 import { Comments } from "./Comments";
 import { Curriculum } from "./Curriculum";
 import { InstructorInfo } from "./InstructorInfo";
 import { CourseDescription } from "./CourseDescription";
 import { CourseCover } from "./CourseCover";
+import { Button } from "./Button";
 
 export const CourseDetailsCard = () => {
   const { id } = useParams();

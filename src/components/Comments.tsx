@@ -1,5 +1,5 @@
-import { Review } from "../interfaces/review";
-import StarRating from "./Rating";
+import { Review } from "../interfaces";
+import { Rating } from "./Rating";
 
 interface CommentsProps {
   reviews: Review[];
@@ -25,7 +25,7 @@ export const Comments = ({ reviews }: CommentsProps) => {
               />
               <div className="flex gap-10">
                 <span className="font-bold text-lg">{review.user}</span>
-                <StarRating rating={review.rating} />
+                <Rating rating={review.rating} />
               </div>
             </div>
             <div className="mt-5 text-xl">

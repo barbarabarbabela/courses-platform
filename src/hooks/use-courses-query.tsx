@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getCourses } from "../services/get-courses";
+import { getCourses } from "../services";
 
 export const useCoursesQuery = () => {
   const { data, isLoading, isError } = useQuery({

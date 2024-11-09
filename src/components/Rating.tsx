@@ -1,10 +1,10 @@
-interface StarRatingProps {
+interface RatingProps {
   rating: number;
-  maxStars?: number;
+  maxRating?: number;
 }
 
-const StarRating: React.FC<StarRatingProps> = ({ rating, maxStars = 5 }) => {
-  const stars = Array.from({ length: maxStars }, (_, index) => (
+export const Rating: React.FC<RatingProps> = ({ rating, maxRating = 5 }) => {
+  const stars = Array.from({ length: maxRating }, (_, index) => (
     <span
       key={index}
       className={index < rating ? "text-yellow-400" : "text-gray-300"}
@@ -15,5 +15,3 @@ const StarRating: React.FC<StarRatingProps> = ({ rating, maxStars = 5 }) => {
 
   return <div className="flex">{stars}</div>;
 };
-
-export default StarRating;

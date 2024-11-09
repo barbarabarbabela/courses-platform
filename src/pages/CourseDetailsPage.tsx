@@ -1,9 +1,9 @@
-import { CourseDetailsCard } from '../components/CourseDetailsCard'
+import { CourseDetailsCard } from "../components";
 
 export const CourseDetailsPage = () => {
   return (
     <div>
       <CourseDetailsCard />
     </div>
-  )
-}
+  );
+};
