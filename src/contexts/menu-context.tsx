@@ -3,7 +3,6 @@ import { PiBooks, PiStar } from "react-icons/pi";
 
 type MenuItem = {
   label: "Todos os cursos" | "Inscrições";
-  icon: JSX.Element;
   path: string;
 };
 
@@ -20,15 +19,13 @@ const MenuProvider = ({ children }: { children: ReactNode }) => {
     useState<MenuItem["label"]>("Todos os cursos");
 
   const items: MenuItem[] = [
-    { label: "Todos os cursos", icon: <PiBooks />, path: "/" },
-    { label: "Inscrições", icon: <PiStar />, path: "/inscricoes" },
+    { label: "Todos os cursos", path: "/" },
+    { label: "Inscrições", path: "/inscricoes" },
   ];
 
   const handleSelect = (item: MenuItem["label"]) => {
     setSelectedMenuItem(item);
   };
-
-  console.log(selectedMenuItem);
 
   return (
     <MenuContext.Provider value={{ selectedMenuItem, items, handleSelect }}>
