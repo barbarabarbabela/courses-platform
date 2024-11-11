@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Course } from "../interfaces";
+import { Course } from "../types";
 import { Button } from "./Button";
 import { useInscription } from "../hooks";
 

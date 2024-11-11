@@ -1,4 +1,4 @@
-import { Review } from "../interfaces";
+import { Review } from "../types";
 import { Rating } from "./Rating";
 
 interface CommentsProps {

@@ -1,6 +1,6 @@
 import { Review } from "./review";
 
-export interface Course {
+export type Course = {
   id: number;
   title: string;
   description: string;
@@ -13,4 +13,4 @@ export interface Course {
   image: string;
   curriculum: string[];
   reviews: Review[];
-}
+};

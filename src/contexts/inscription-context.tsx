@@ -1,5 +1,5 @@
 import { createContext, useState, ReactNode } from "react";
-import { Course } from "../interfaces";
+import { Course } from "../types";
 
 type InscriptionContextProps = {
   inscriptions: Course[];
