@@ -10,19 +10,24 @@ import { Button } from "./Button";
 export const CourseDetailsCard = () => {
   const { id } = useParams();
   const { data, isLoading, isError } = useCoursesQuery();
-  const { handleCourseInscription, isCourseInscribed } = useInscription();
+  const {
+    handleCourseInscription,
+    isCourseInscribed,
+    inscriptionButtonText,
+    handleRemoveCourseInscription,
+  } = useInscription();
   const navigate = useNavigate();
 
-  const course = data?.find((course) => course.id === Number(id));
+  const selectedCourse = data?.find((course) => course.id === Number(id));
 
   if (isLoading) return <div>Carregando...</div>;
   if (isError) return <div>Curso não encontrado</div>;
 
-  if (!course) return <div>Curso não encontrado</div>;
+  if (!selectedCourse) return <div>Curso não encontrado</div>;
 
   return (
     <div>
-      <CourseCover course={course} />
+      <CourseCover course={selectedCourse} />
 
       <div className="p-10 bg-gray800">
         <div className="w-full flex justify-end">
@@ -34,27 +39,37 @@ export const CourseDetailsCard = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
-          <CourseDescription course={course} />
+          <CourseDescription course={selectedCourse} />
 
-          <InstructorInfo instructor={course.instructor} />
+          <InstructorInfo instructor={selectedCourse.instructor} />
         </div>
 
-        <Curriculum curriculum={course.curriculum} />
+        <Curriculum curriculum={selectedCourse.curriculum} />
 
-        <Comments reviews={course.reviews} />
+        <Comments reviews={selectedCourse.reviews} />
 
-        <div className="w-full mt-10 flex justify-center ">
-          <div className="w-[50%]">
+        <div className="w-full mt-10 flex flex-col gap-5">
+          {selectedCourse && isCourseInscribed(selectedCourse.id) ? (
+            <Button
+              variant="outline"
+              onClick={() =>
+                selectedCourse &&
+                handleRemoveCourseInscription(selectedCourse.id)
+              }
+            >
+              Cancelar Inscrição
+            </Button>
+          ) : (
             <Button
               variant="filled"
-              disabled={course && isCourseInscribed(course.id)}
-              onClick={() => course && handleCourseInscription(course)}
+              disabled={selectedCourse && isCourseInscribed(selectedCourse.id)}
+              onClick={() =>
+                selectedCourse && handleCourseInscription(selectedCourse)
+              }
             >
-              {course && isCourseInscribed(course.id)
-                ? "Inscrito!"
-                : "Inscrever-se"}
+              {inscriptionButtonText}
             </Button>
-          </div>
+          )}
         </div>
       </div>
     </div>
