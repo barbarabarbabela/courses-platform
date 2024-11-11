@@ -23,7 +23,7 @@ export const CourseDetailsCard = () => {
   if (isLoading) return <div>Carregando...</div>;
   if (isError || !selectedCourse) return <div>Curso não encontrado</div>;
 
-  const handleBackNavigation = () => navigate("/");
+  const handleBackNavigation = () => navigate(-1);
   const handleInscriptionToggle = () => {
     if (selectedCourse) {
       isCourseInscribed(selectedCourse.id)
