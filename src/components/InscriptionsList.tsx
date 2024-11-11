@@ -16,13 +16,11 @@ export const InscriptionsList = () => {
         <h2 className="text-3xl font-bold">
           {searchTerm.length > 0
             ? `Resultados (${searchItemsLength})`
-            : `Inscrições (${inscriptions?.length})`}
+            : `Inscrições (${inscriptions.length})`}
         </h2>
         {searchTerm && (
           <div className="w-32">
-            <Button onClick={handleClearSearch} variant="filled">
-              Voltar
-            </Button>
+            <Button onClick={handleClearSearch}>Voltar</Button>
           </div>
         )}
       </div>
@@ -34,7 +32,7 @@ export const InscriptionsList = () => {
                 course.title.toLowerCase().includes(searchTerm.toLowerCase())
               )
               .map((course) => <CourseCard key={course.id} data={course} />)
-          : inscriptions?.map((course) => (
+          : inscriptions.map((course) => (
               <CourseCard key={course.id} data={course} />
             ))}
       </div>

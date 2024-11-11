@@ -24,9 +24,7 @@ export const CourseList = () => {
         </h2>
         {searchTerm && (
           <div className="w-32">
-            <Button onClick={handleClearSearch} variant="filled">
-              Voltar
-            </Button>
+            <Button onClick={handleClearSearch}>Voltar</Button>
           </div>
         )}
       </div>
