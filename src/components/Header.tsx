@@ -10,7 +10,7 @@ interface FormProps {
 }
 
 export const Header = () => {
-  const { selected, items, handleSelect } = useMenu();
+  const { selectedMenuItem, items, handleSelect } = useMenu();
   const { setSearchTerm } = useSearchContext();
   const { handleSubmit, register, reset } = useForm<FormProps>();
 
@@ -32,7 +32,9 @@ export const Header = () => {
             <span
               onClick={() => handleSelect(item.label)}
               className={`cursor-pointer hover:text-green500 ${
-                selected === item.label ? "border-b-4 border-green500" : ""
+                selectedMenuItem === item.label
+                  ? "border-b-4 border-green500"
+                  : ""
               }`}
             >
               {item.label}

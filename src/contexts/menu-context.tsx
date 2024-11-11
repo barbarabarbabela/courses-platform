@@ -8,7 +8,7 @@ type MenuItem = {
 };
 
 type MenuContextProps = {
-  selected: MenuItem["label"];
+  selectedMenuItem: MenuItem["label"];
   items: MenuItem[];
   handleSelect: (item: MenuItem["label"]) => void;
 };
@@ -16,7 +16,7 @@ type MenuContextProps = {
 const MenuContext = createContext<MenuContextProps | undefined>(undefined);
 
 const MenuProvider = ({ children }: { children: ReactNode }) => {
-  const [selected, setSelected] =
+  const [selectedMenuItem, setSelectedMenuItem] =
     useState<MenuItem["label"]>("Todos os cursos");
 
   const items: MenuItem[] = [
@@ -25,11 +25,13 @@ const MenuProvider = ({ children }: { children: ReactNode }) => {
   ];
 
   const handleSelect = (item: MenuItem["label"]) => {
-    setSelected(item);
+    setSelectedMenuItem(item);
   };
 
+  console.log(selectedMenuItem);
+
   return (
-    <MenuContext.Provider value={{ selected, items, handleSelect }}>
+    <MenuContext.Provider value={{ selectedMenuItem, items, handleSelect }}>
       {children}
     </MenuContext.Provider>
   );
