@@ -87,3 +87,6 @@ npm run dev
 ```
 
 ## Decisões de Projeto
+
+- Decidi criar um arquivo JSON com todos os dados dos cursos, simulando uma API de backend.
+- Optei por não persistir as inscrições. Elas estão salvas apenas no contexto (em memória).
